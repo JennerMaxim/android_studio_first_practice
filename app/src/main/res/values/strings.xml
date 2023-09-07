@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">First Practice</string>
+    <string name="top_bar">Disease Diagnosis Management</string>
+    <string name="title">Registration Form</string>
+    <string name="medical">Medical Staff:</string>
+    <string name="date">Date of birth:</string>
+    <string name="enter_date">Enter Date of birth..</string>
+    <string name="surname">Surname:</string>
+    <string name="enter_name">Enter Surname</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="contact">Contact:</string>
+    <string name="enter_contact">Enter Contact No..</string>
+    <string name="email">Email:</string>
+    <string name="enter_email">Enter Email...</string>
+    <string name="password">Password:</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="btn">Submit</string>
+</resources>

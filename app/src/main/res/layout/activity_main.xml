@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/top_bar"
+        android:gravity="center"
+        android:background="#000ccc"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/title"
+        android:textSize="25sp"
+        android:textColor="#000" />
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="2dp"
+        android:background="#aca1a1"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medical"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginStart="5dp"/>
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/SpCountry"
+            android:layout_marginStart="35dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:id="@+id/userDate"
+            android:textSize="25sp"
+            android:background="#fff"
+            android:hint="@string/enter_date"
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            android:inputType="date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surname"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:id="@+id/userName"
+            android:textSize="25sp"
+            android:background="#fff"
+            android:hint="@string/enter_name"
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            android:inputType="text" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginStart="5dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:text="@string/female"
+            android:gravity="center"
+            android:layout_marginStart="35dp"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="@string/male"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:id="@+id/userContact"
+            android:textSize="25sp"
+            android:background="#fff"
+            android:hint="@string/enter_contact"
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:id="@+id/userEmail"
+            android:textSize="25sp"
+            android:background="#fff"
+            android:hint="@string/enter_email"
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:id="@+id/userPassword"
+            android:textSize="25sp"
+            android:background="#fff"
+            android:hint="@string/enter_password"
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:text="@string/btn"
+        android:textSize="20sp"/>
+</LinearLayout>
