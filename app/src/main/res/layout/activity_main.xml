@@ -71,7 +71,7 @@
             android:layout_marginStart="5dp"/>
 
         <EditText
-            android:layout_width="280dp"
+            android:layout_width="270dp"
             android:layout_height="50dp"
             android:id="@+id/userDate"
             android:textSize="25sp"
@@ -223,9 +223,149 @@
     </LinearLayout>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnSubmit"
         android:text="@string/btn"
+        android:layout_gravity="center"
         android:textSize="20sp"/>
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#aca1a1"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volume"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choice"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/java"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_marginStart="5dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/python"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/javascript"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/php"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mysql"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subscribe"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/enter_message"
+            android:layout_gravity="center"
+            android:background="#ddd"
+            android:textSize="20sp"
+            android:autofillHints=""
+            android:inputType="text" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/send"
+            android:layout_gravity="center"
+            android:contentDescription="@string/desc" />
+
+    </LinearLayout>
 </LinearLayout>
